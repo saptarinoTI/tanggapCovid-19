@@ -1,0 +1,671 @@
+@import url("https://fonts.googleapis.com/css2?family=Itim&family=Karla&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Navbar */
+.navbar {
+  padding: 20px;
+  z-index: 9999;
+}
+
+.navbar .navbar-toggler img {
+  width: 32px;
+}
+
+.navbar .navbar-nav .nav-link {
+  font-size: 14px;
+  margin-left: 10px;
+  letter-spacing: 1px;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.navbar .navbar-nav .nav-link.active {
+  color: rgba(255, 255, 255, 1);
+  font-weight: bold;
+}
+
+.navbar .navbar-nav .nav-link:hover {
+  color: rgba(255, 255, 255, 1);
+  font-weight: bold;
+}
+
+.sticky {
+  background: rgba(255, 255, 255, 1);
+  padding: 15px;
+}
+
+.sticky .navbar-nav .nav-link {
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.sticky .navbar-nav .nav-link.active {
+  color: rgba(0, 0, 0, 1);
+  font-weight: bold;
+}
+
+.sticky .navbar-nav .nav-link:hover {
+  color: rgba(0, 0, 0, 1);
+  font-weight: bold;
+}
+
+@media (max-width: 992px) {
+  .navbar {
+    background: rgba(0, 0, 0, 0.5);
+  }
+
+  .sticky {
+    background: rgba(255, 255, 255, 1);
+    padding: 15px;
+  }
+}
+/* End Navbar */
+
+/* Hero */
+.hero {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.7) 0%,
+      rgba(0, 0, 0, 0.9) 100%
+    ),
+    url(../assets/img/4198555.jpg);
+  height: 100vh;
+  background-attachment: static;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hero .title {
+  font-size: 58px;
+  letter-spacing: 2px;
+  padding-top: 42vh;
+  color: #ffffff;
+  font-family: "Itim", cursive;
+}
+
+.hero .description {
+  font-size: 16px;
+  color: #ffffff;
+  font-family: "Karla", sans-serif;
+}
+
+@media (max-width: 992px) {
+  .hero .title {
+    /* font-weight: 700; */
+    font-size: 42px;
+    /* font-family: "Patrick Hand", cursive; */
+  }
+
+  .hero .description {
+    font-size: 15px;
+  }
+}
+/* End Hero */
+
+/* Covid-19 */
+.covid19 {
+  padding: 10px 0;
+  background: rgba(200, 200, 200, 0.2);
+}
+
+.covid19 .title {
+  color: rgba(0, 0, 0, 0.8);
+  margin: 25px 0 15px;
+  font-family: "Itim", cursive;
+}
+
+.covid19 .card-covid19 {
+  box-shadow: 2px 2px 10px 2px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  background: rgba(255, 255, 255, 1);
+  padding: 10px;
+}
+
+.covid19 .card-img-top {
+  padding: 20px 8px;
+  margin: 20px 10px;
+}
+
+.covid19 .card-covid19 .card-covid19-isi {
+  opacity: 0;
+  transform: translate(-40px, 0);
+  transition: 0.5s;
+}
+
+.covid19 .card-covid19 .card-covid19-isi.muncul {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
+.covid19 .card-covid19-title1,
+.covid19 .card-covid19-title2,
+.covid19 .card-covid19-title3 {
+  color: rgba(0, 0, 0, 0.8);
+  font-family: "Itim", cursive;
+  margin-top: 20px;
+  padding: 0 15px;
+}
+
+.covid19 .card-covid19-desc1,
+.covid19 .card-covid19-desc2,
+.covid19 .card-covid19-desc3,
+.covid19 .card-covid19-desc1 span,
+.covid19 .card-covid19-desc2 span,
+.covid19 .card-covid19-desc3 span {
+  color: rgba(0, 0, 0, 0.8);
+  font-family: "Karla", sans-serif;
+  text-align: justify;
+  padding: 0 15px;
+}
+
+.covid19 .card-covid19-desc1 span,
+.covid19 .card-covid19-desc2 span,
+.covid19 .card-covid19-desc3 span {
+  margin-left: 13px;
+}
+/* End Covid-19 */
+
+/* Data Covid-19 Indonesia */
+.covid19-indo {
+  padding: 10px 0;
+  background: rgb(255, 255, 255);
+}
+
+.covid19-indo .title {
+  color: rgba(0, 0, 0, 0.8);
+  margin: 25px 0 15px;
+  font-family: "Itim", cursive;
+}
+
+.covid19-indo .card-covid19-indo-positif {
+  box-shadow: 2px 2px 10px 2px rgba(34, 34, 34, 0.6);
+  transition: 0.3s;
+  border-radius: 5px;
+  margin: 10px 0;
+  background: #dc3545;
+  padding: 10px;
+  height: 150px;
+  opacity: 0;
+  transform: translate(0, -50px);
+  transition: 0.5s;
+}
+
+.covid19-indo .card-covid19-indo-positif.muncul {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
+.covid19-indo .card-covid19-indo-positif i {
+  color: #dc3545;
+}
+
+.covid19-indo .card-covid19-indo-positif p {
+  color: rgb(255, 255, 255);
+  font-family: "Karla", sans-serif;
+}
+
+.covid19-indo .card-covid19-indo-positif h2 {
+  color: rgb(255, 255, 255);
+  font-family: "Itim", cursive;
+  font-weight: bold;
+}
+
+.covid19-indo .card-covid19-indo-positif h5 {
+  color: rgb(255, 255, 255);
+  font-family: "Itim", cursive;
+  letter-spacing: 1px;
+}
+
+.covid19-indo .card-covid19-indo-sembuh {
+  box-shadow: 2px 2px 10px 2px rgba(34, 34, 34, 0.6);
+  transition: 0.3s;
+  border-radius: 5px;
+  margin: 10px 0;
+  background: #28a745;
+  padding: 10px;
+  height: 150px;
+  opacity: 0;
+  transform: translate(0, -50px);
+  transition: 0.5s;
+}
+
+.covid19-indo .card-covid19-indo-sembuh.muncul {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
+.covid19-indo .card-covid19-indo-sembuh i {
+  color: #28a745;
+}
+
+.covid19-indo .card-covid19-indo-sembuh p {
+  color: rgb(255, 255, 255);
+  font-family: "Karla", sans-serif;
+}
+
+.covid19-indo .card-covid19-indo-sembuh h2 {
+  color: rgb(255, 255, 255);
+  font-family: "Itim", cursive;
+  font-weight: bold;
+}
+
+.covid19-indo .card-covid19-indo-sembuh h5 {
+  color: rgb(255, 255, 255);
+  font-family: "Itim", cursive;
+  letter-spacing: 1px;
+}
+
+.covid19-indo .card-covid19-indo-dirawat {
+  box-shadow: 2px 2px 10px 2px rgba(34, 34, 34, 0.6);
+  transition: 0.3s;
+  border-radius: 5px;
+  margin: 10px 0;
+  background: #007bff;
+  padding: 10px;
+  height: 150px;
+  opacity: 0;
+  transform: translate(0, -50px);
+  transition: 0.5s;
+}
+
+.covid19-indo .card-covid19-indo-dirawat.muncul {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
+.covid19-indo .card-covid19-indo-dirawat i {
+  color: #007bff;
+}
+
+.covid19-indo .card-covid19-indo-dirawat p {
+  color: rgb(255, 255, 255);
+  font-family: "Karla", sans-serif;
+}
+
+.covid19-indo .card-covid19-indo-dirawat h2 {
+  color: rgb(255, 255, 255);
+  font-family: "Itim", cursive;
+  font-weight: bold;
+}
+
+.covid19-indo .card-covid19-indo-dirawat h5 {
+  color: rgb(255, 255, 255);
+  font-family: "Itim", cursive;
+  letter-spacing: 1px;
+}
+
+.covid19-indo .card-covid19-indo-meninggal {
+  box-shadow: 2px 2px 10px 2px rgba(34, 34, 34, 0.6);
+  transition: 0.3s;
+  border-radius: 5px;
+  margin: 10px 0;
+  background: #343a40;
+  padding: 10px;
+  height: 150px;
+  opacity: 0;
+  transform: translate(0, -50px);
+  transition: 0.5s;
+}
+
+.covid19-indo .card-covid19-indo-meninggal.muncul {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
+.covid19-indo .card-covid19-indo-meninggal i {
+  color: #343a40;
+}
+
+.covid19-indo .card-covid19-indo-meninggal p {
+  color: rgb(255, 255, 255);
+  font-family: "Karla", sans-serif;
+}
+
+.covid19-indo .card-covid19-indo-meninggal h2 {
+  color: rgb(255, 255, 255);
+  font-family: "Itim", cursive;
+  font-weight: bold;
+}
+
+.covid19-indo .card-covid19-indo-meninggal h5 {
+  color: rgb(255, 255, 255);
+  font-family: "Itim", cursive;
+  letter-spacing: 1px;
+}
+
+.covid19-indo .card-covid19-indo-isi i {
+  background-color: #ffffff;
+  border-radius: 50%;
+  padding: 10px 6px;
+  margin: 10px;
+  float: right;
+  font-size: 22px;
+}
+
+.covid19-indo .update {
+  color: rgba(0, 0, 0);
+  font-size: 16px;
+  font-family: "Karla", sans-serif;
+}
+
+.covid19-indo .covid-chart {
+  opacity: 0;
+  transform: translate(0, -50px);
+  transition: 0.5s;
+}
+
+.covid19-indo .covid-chart.muncul {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+/* End Data Covid-19 Indonesia */
+
+/* Data Covid-19 Provinsi */
+.covid19-prov {
+  padding: 10px 0;
+  background: rgba(200, 200, 200, 0.2);
+}
+
+.covid19-prov .title {
+  color: rgba(0, 0, 0, 0.8);
+  margin: 25px 0 15px;
+  font-family: "Itim", cursive;
+}
+
+.covid19-prov .card-covid19-prov {
+  box-shadow: 2px 2px 10px 2px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  background: rgba(255, 255, 255, 1);
+  padding: 10px;
+}
+
+.covid19-prov .table-covid19-prov {
+  display: block;
+  width: 100%;
+  padding: 0 10px 10px;
+  height: 70vh;
+  overflow-x: auto;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+}
+
+.covid19-prov .table-covid19-prov .field-table {
+  position: sticky;
+  top: -5px;
+  color: #000000;
+  background-color: #ffffff;
+  z-index: 999;
+}
+
+.covid19-prov .table-covid19-prov tbody tr td {
+  font-size: 14px;
+  font-weight: bold;
+  font-family: "Karla", sans-serif;
+  opacity: 0;
+  transform: translate(-50px, 0);
+  transition: 0.5s;
+}
+
+.covid19-prov .table-covid19-prov tbody tr td.muncul {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
+.covid19-prov .update {
+  color: rgba(0, 0, 0);
+  font-size: 16px;
+  font-family: "Karla", sans-serif;
+}
+/* End Data Covid-19 Provinsi */
+
+/* Data Covid-19 Bontang */
+.covid19-btg {
+  padding: 10px 0;
+  background: rgb(255, 255, 255);
+}
+
+.covid19-btg .title {
+  color: rgba(0, 0, 0, 0.8);
+  margin: 25px 0 15px;
+  font-family: "Itim", cursive;
+}
+
+.covid19-btg .card-covid19-btg-positif {
+  box-shadow: 2px 2px 10px 2px rgba(34, 34, 34, 0.6);
+  transition: 0.3s;
+  border-radius: 5px;
+  margin: 10px 0;
+  background: #dc3545;
+  padding: 10px;
+  height: 125px;
+  opacity: 0;
+  transform: translate(0, -50px);
+  transition: 0.5s;
+}
+
+.covid19-btg .card-covid19-btg-positif.muncul {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
+.covid19-btg .card-covid19-btg-positif i {
+  color: #dc3545;
+}
+
+.covid19-btg .card-covid19-btg-positif p {
+  color: rgb(255, 255, 255);
+  font-family: "Karla", sans-serif;
+}
+
+.covid19-btg .card-covid19-btg-positif h2 {
+  color: rgb(255, 255, 255);
+  font-family: "Itim", cursive;
+  font-weight: bold;
+}
+
+.covid19-btg .card-covid19-btg-sembuh {
+  box-shadow: 2px 2px 10px 2px rgba(34, 34, 34, 0.6);
+  transition: 0.3s;
+  border-radius: 5px;
+  margin: 10px 0;
+  background: #28a745;
+  padding: 10px;
+  height: 125px;
+  opacity: 0;
+  transform: translate(0, -50px);
+  transition: 0.5s;
+}
+
+.covid19-btg .card-covid19-btg-sembuh.muncul {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
+.covid19-btg .card-covid19-btg-sembuh i {
+  color: #28a745;
+}
+
+.covid19-btg .card-covid19-btg-sembuh p {
+  color: rgb(255, 255, 255);
+  font-family: "Karla", sans-serif;
+}
+
+.covid19-btg .card-covid19-btg-sembuh h2 {
+  color: rgb(255, 255, 255);
+  font-family: "Itim", cursive;
+  font-weight: bold;
+}
+
+.covid19-btg .card-covid19-btg-dirawat {
+  box-shadow: 2px 2px 10px 2px rgba(34, 34, 34, 0.6);
+  transition: 0.3s;
+  border-radius: 5px;
+  margin: 10px 0;
+  background: #007bff;
+  padding: 10px;
+  height: 125px;
+  opacity: 0;
+  transform: translate(0, -50px);
+  transition: 0.5s;
+}
+
+.covid19-btg .card-covid19-btg-dirawat.muncul {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
+.covid19-btg .card-covid19-btg-dirawat i {
+  color: #007bff;
+}
+
+.covid19-btg .card-covid19-btg-dirawat p {
+  color: rgb(255, 255, 255);
+  font-family: "Karla", sans-serif;
+}
+
+.covid19-btg .card-covid19-btg-dirawat h2 {
+  color: rgb(255, 255, 255);
+  font-family: "Itim", cursive;
+  font-weight: bold;
+}
+
+.covid19-btg .card-covid19-btg-meninggal {
+  box-shadow: 2px 2px 10px 2px rgba(34, 34, 34, 0.6);
+  transition: 0.3s;
+  border-radius: 5px;
+  margin: 10px 0;
+  background: #343a40;
+  padding: 10px;
+  height: 125px;
+  opacity: 0;
+  transform: translate(0, -50px);
+  transition: 0.5s;
+}
+
+.covid19-btg .card-covid19-btg-meninggal.muncul {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
+.covid19-btg .card-covid19-btg-meninggal i {
+  color: #343a40;
+}
+
+.covid19-btg .card-covid19-btg-meninggal p {
+  color: rgb(255, 255, 255);
+  font-family: "Karla", sans-serif;
+}
+
+.covid19-btg .card-covid19-btg-meninggal h2 {
+  color: rgb(255, 255, 255);
+  font-family: "Itim", cursive;
+  font-weight: bold;
+}
+
+.covid19-btg .card-covid19-btg-isi i {
+  background-color: #ffffff;
+  border-radius: 50%;
+  padding: 10px 6px;
+  margin: 10px;
+  float: right;
+  font-size: 22px;
+}
+
+.covid19-btg .update {
+  color: rgba(0, 0, 0);
+  font-size: 16px;
+  font-family: "Karla", sans-serif;
+}
+/* End Data Covid-19 Bontang */
+
+/* Informasi */
+.informasi {
+  padding: 10px 0;
+  background: rgba(200, 200, 200, 0.2);
+}
+
+.informasi .title {
+  color: rgba(0, 0, 0, 0.8);
+  margin: 25px 0 15px;
+  font-family: "Itim", cursive;
+}
+
+.informasi .card-informasi {
+  box-shadow: 2px 2px 10px 2px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+  border-radius: 5px;
+  margin-bottom: 50px;
+  background: rgba(255, 255, 255, 1);
+  /* padding: 10px; */
+}
+
+.informasi .card-img-top {
+  padding: 20px 30px;
+}
+
+.informasi .card-informasi .card-body {
+  opacity: 0;
+  transform: translate(-50px, 0);
+  transition: 0.5s;
+}
+
+.informasi .card-informasi .card-body.muncul {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
+.informasi .card-body .card-title {
+  color: rgba(0, 0, 0, 0.8);
+  font-family: "Itim", cursive;
+  margin-top: 20px;
+}
+
+.informasi .card-body .card-text,
+.informasi .card-body .card-text span {
+  color: rgba(0, 0, 0, 0.8);
+  font-family: "Karla", sans-serif;
+  text-align: justify;
+}
+.informasi .card-body .card-text span {
+  padding-left: 15px;
+}
+
+.informasi .card-informasi .card-body .ul {
+  margin-left: 10px;
+  float: right;
+  font-family: "Karla", sans-serif;
+  color: rgba(0, 0, 0, 0.8);
+  text-align: left;
+}
+
+.informasi .card-informasi .card-body ul ul {
+  margin-left: 30px;
+  font-family: "Karla", sans-serif;
+  color: rgba(0, 0, 0, 0.8);
+}
+/* End Informasi */
+
+/* Footer */
+.footer {
+  background: #0000009e;
+}
+
+.footer span {
+  color: #ffffff;
+  font-family: "Karla";
+}
+
+.footer a i {
+  font-size: 20px;
+  color: #ffffff;
+}
+/* End Footer */
