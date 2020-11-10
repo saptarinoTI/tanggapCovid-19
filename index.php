@@ -172,7 +172,7 @@ include 'config/api.php';
           <div class="card-covid19-indo-meninggal">
             <div class="card-body card-covid19-indo-isi py-2">
               <i class="fa fa-user-times"></i>
-              <p class="mb-0"><strong>DIRAWAT / ISOLASI</strong></p>
+              <p class="mb-0"><strong>MENINGGAL</strong></p>
               <h2 class="mb-0"><?= number_format($dataIndo['total']['meninggal']); ?></h2>
               <p class="mb-0">ORANG</p>
               <h5 class="mb-0">+<?= number_format($dataIndo['penambahan']['meninggal']); ?></h5>
@@ -275,7 +275,7 @@ include 'config/api.php';
           <div class="card-covid19-btg-meninggal">
             <div class="card-body card-covid19-btg-isi py-2">
               <i class="fa fa-user-times"></i>
-              <p class="mb-0"><strong>DIRAWAT / ISOLASI</strong></p>
+              <p class="mb-0"><strong>MENINGGAL</strong></p>
               <h2 class="mb-0"><?= number_format($dataBtg[2]['Meninggal']); ?></h2>
               <p class="mb-0">ORANG</p>
             </div>
